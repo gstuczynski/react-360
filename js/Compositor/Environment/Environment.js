@@ -183,6 +183,7 @@ export default class Environment {
         this._setPanoGeometryToSphere();
       }
     }
+    window.postMessage({loaded: "background"},'*')
     this._panoMaterial.needsUpdate = true;
   }
 
